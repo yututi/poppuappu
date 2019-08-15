@@ -2,7 +2,9 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "strict": true,
+    "strict": false,
+    "declaration": true,
+    "declarationDir": "./types",
     "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
