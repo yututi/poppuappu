@@ -1,0 +1,125 @@
+<style lang="stylus">
+.popup-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.popup-wrapper {
+  box-sizing: border-box;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s, margin-top 0.5s;
+
+  &--show {
+    overflow: visible;
+    animation: popup 0.5s;
+    margin-top: 5px;
+  }
+
+  &--hide {
+    opacity: 0;
+    margin-top: 0px;
+    animation: popuphide 0.5s reverse;
+  }
+}
+
+@keyframes popup {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes popuphide {
+  0% {
+    margin-top: 0px;
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    margin-top: 5px;
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    margin-top: 5px;
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.popup {
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  border-radius: calc(0.5em + 10px);
+  cursor: default;
+  display: flex;
+  align-items: center;
+
+  &__message {
+    flex: 1;
+    margin: 0 1em;
+  }
+
+  &__close {
+    position: relative;
+    height: 1em;
+    width: 1em;
+    cursor: pointer;
+
+    &:after, &:before {
+      position: absolute;
+      content: '';
+      left: calc(0.5em - 2px);
+      height: 1em;
+      width: 2px;
+      background-color: black;
+    }
+
+    &:after {
+      transform: rotate(45deg);
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+$primary = dodgerblue;
+$info = white;
+
+.popup--primary {
+  background-color: $primary;
+  border-color: darken($primary, 4);
+  color: white;
+  box-shadow: 0 0 5px 1px rgba(150, 150, 150, 0.5);
+
+  .popup__close {
+    &:after, &:before {
+      background-color: white;
+    }
+  }
+}
+
+.popup--info {
+  background-color: $info;
+  border-color: gainsboro;
+  color: gray;
+  box-shadow: 0 0 5px 1px rgba(150, 150, 150, 0.2);
+}
+</style>

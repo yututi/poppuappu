@@ -1,27 +1,37 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+      <select v-model="mode">
+          <option>primary</option>
+          <option>info</option>
+      </select>
+    <input type="text" v-model="text" />
+    <button @click="showpopup">show popup</button>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+import { Component, Vue } from "vue-property-decorator";
 
 @Component({
-  components: {
-    HelloWorld,
-  },
+  components: {}
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  text: string = "test";
+  mode: string = "primary"
+  showpopup() {
+    this.$popup.show(this.text, {
+        mode: this.mode
+    });
+  }
+}
 </script>
 <style lang="stylus">
-#app
-  font-family 'Avenir', Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: right;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>
