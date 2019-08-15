@@ -1,6 +1,6 @@
 {
     "name": "poppuappu",
-    "version": "0.1.2",
+    "version": "0.1.7",
     "private": false,
     "main": "dist/poppuappu.common.js",
     "types": "types/index.d.ts",

@@ -10,7 +10,15 @@ npm install
 npm run serve
 ```
 
-### install(まだ動かない)
+### 使い方
+#### npm install
 ```
-npm install poppuappu
+npm install -D poppuappu
 ```
+#### install plugin
+```vue
+import Popup from 'poppuappu'
+Vue.use(Popup)
+```
+
+
