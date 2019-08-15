@@ -13,7 +13,7 @@ npm run serve
 ### 使い方
 #### npm install
 ```
-npm install -D poppuappu
+npm install poppuappu
 ```
 #### プラグインをVueにインストール
 ```js
