@@ -1,8 +1,8 @@
 {
   "name": "poppuappu",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "private": false,
-  "main": "dist/poppuappu.common.js",
+  "main": "dist/poppuappu.js",
   "types": "types/index.d.ts",
   "scripts": {
     "build": "webpack --config ./build/webpack.config.js --progress",

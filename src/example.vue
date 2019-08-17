@@ -19,7 +19,7 @@ export default class App extends Vue {
   text: string = "test";
   mode: string = "primary"
   showpopup() {
-    this.$popup.show(this.text, {
+    this.$poppuappu.show(this.text, {
         mode: this.mode
     });
   }

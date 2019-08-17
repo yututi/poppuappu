@@ -7,7 +7,6 @@ declare global {
         interface Element extends VNode { }
         // tslint:disable no-empty-interface
         interface ElementClass extends Vue {
-            $popup: Pupup
         }
         interface IntrinsicElements {
             [elem: string]: any
@@ -18,10 +17,10 @@ declare global {
 declare module 'vue/types/vue' {
 
     interface Vue {
-        $popup: Pupup
+        $poppuappu: Pupup
     }
 
     interface VueConstructor {
-        $popup: Pupup
+        $poppuappu: Pupup
     }
 }
