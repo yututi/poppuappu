@@ -18,7 +18,7 @@ Vue.use(Poppuappu)
 ```
 
 namespace $poppuappu will bind to Vue object.  
-you can display popup as belows.
+you can display popup as belows in your Vue component.
 ```js
 this.$popppuappu.show('some text')
 ```
