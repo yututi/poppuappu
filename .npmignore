@@ -1,1 +1,8 @@
 node_modules/
+src/
+tests/
+build/
+public/
+webpack.config.js
+.gitignore
+README.md
