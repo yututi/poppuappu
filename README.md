@@ -1,34 +1,33 @@
-# popup
+# rippuru
+ripple plugin for vue.js.
 
-## Project setup
-```
-npm install
-```
-
-### demo
-```
-npm run serve
+## Install
+```cmd
+npm i rippuru
 ```
 
-### 使い方
-#### npm install
-```
-npm install -D poppuappu
-```
-#### プラグインをVueにインストール
+## Demo
+clone this repository and `npm i && npm run serve`.
+
+## How to use
+register plugin.
 ```js
-import Popup from 'poppuappu'
-Vue.use(Popup)
+import Vue from 'vue'
+import Rippuru from 'rippuru'
+Vue.use(Rippuru)
 ```
 
-#### 各コンポーネントで使う
-```js
-// vue component
-export default {
-    methods:{
-        hoge:function(){
-            this.$popup.show('some message')
-        }
-    }
-}
+use directive.  
+by default, ripple color depends on color of bound element.
+```html
+<button v-rippuru>
+    hoge
+</button>
+```
+
+you can change ripple color by specifying directive arg.
+```html
+<button v-rippuru:red>
+    hoge
+</button>
 ```

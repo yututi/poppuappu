@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './App.vue'
+import App from './example.vue'
 import Popup from './index'
 
 Vue.config.productionTip = false

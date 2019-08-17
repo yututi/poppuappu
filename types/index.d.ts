@@ -1,15 +1,14 @@
 import { PluginObject } from 'vue';
-import { PopupOptions, Popup as P } from './popup';
-declare const Popup: PluginObject<PopupOptions>;
-export default Popup;
+import { Popup } from './poppuappu/popup';
+import './poppuappu/index'
 
 declare module 'vue/types/vue' {
 
     interface Vue {
-        $popup: P
+        $popup: Popup
     }
 
     interface VueConstructor {
-        $popup: P
+        $popup: Popup
     }
 }
