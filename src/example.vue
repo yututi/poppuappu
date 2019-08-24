@@ -2,7 +2,10 @@
   <div id="app">
       <select v-model="mode">
           <option>primary</option>
+          <option>success</option>
           <option>info</option>
+          <option>warn</option>
+          <option>error</option>
       </select>
     <input type="text" v-model="text" />
     <button @click="showpopup">show popup</button>

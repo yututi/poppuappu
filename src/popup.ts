@@ -14,8 +14,8 @@ class PupupObj {
     removed = false
     constructor(public el: HTMLElement) {
         const close = el.querySelector('.popup__close')
-        if(close){
-            close.addEventListener('click', ()=>{
+        if (close) {
+            close.addEventListener('click', () => {
                 this.hide()
             })
         }
