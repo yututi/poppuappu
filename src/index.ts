@@ -4,7 +4,7 @@ import './index.styl'
 
 const Poppuappu: PluginObject<PopupOptions> = {
     install(Vue, options?) {
-        Vue.prototype.$poppuappu = new P(options)
+        Vue.prototype.$poppuappu = Vue.$poppuappu = new P(options)
     }
 }
 
