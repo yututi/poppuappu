@@ -2,7 +2,7 @@
     "compilerOptions": {
         "sourceMap": true,
         "declaration": true,
-        "declarationDir": "types/poppuappu",
+        "declarationDir": "types",
         "experimentalDecorators": true,
         "module": "commonjs",
         "target": "es5",
@@ -14,10 +14,12 @@
     "include": [
         "src/**/*.ts",
         "src/**/*.tsx",
-        "src/**/*.vue"
+        "src/**/*.vue",
+        "example/*.ts",
+        "example/*.vue"
     ],
     "compileOnSave": false,
     "exclude": [
-      "node_modules"
+        "node_modules"
     ]
 }

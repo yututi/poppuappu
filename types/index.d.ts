@@ -1,6 +1,6 @@
 import { PluginObject } from 'vue';
-import { Popup } from './poppuappu/popup';
-import Poppuappu from './poppuappu/index'
+import { Popup } from './src/popup';
+import Poppuappu from './src/index'
 
 export default Poppuappu;
 
