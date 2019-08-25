@@ -1,6 +1,9 @@
 # poppuappu
 notification popup plugin for vue.js.
 
+## Rerquirements
+- Vue : 2.X
+
 ## Demo
 clone this repository and run `npm i && npm run dev`.
 
@@ -26,6 +29,7 @@ this.$poppuappu.show('some text.')
 this.$poppuappu.show('this is info notification.' { mode: 'info' })
 this.$poppuappu.show('this is warn notification.' { mode: 'warn' })
 this.$poppuappu.show('this is error notification.' { mode: 'error' })
+
 // you can also use $poppuappu in global.
 Vue.$poppuappu.show('some text.')
 ```
