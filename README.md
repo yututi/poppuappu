@@ -7,7 +7,7 @@ npm i poppuappu
 ```
 
 ## Demo
-clone this repository and `npm i && npm run serve`.
+clone this repository and run `npm i && npm run dev`.
 
 ## How to use
 register plugin.
