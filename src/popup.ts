@@ -44,13 +44,11 @@ class PupupObj {
 
 export class Popup {
 
-    containerId: string = "popup-container"
     container: HTMLElement;
     globalOptions: PopupOptions;
 
     public constructor(options?: PopupOptions) {
         const el = document.createElement("div")
-        el.id = this.containerId
         el.classList.add('popup-container')
         document.body.appendChild(el)
         this.container = el;
